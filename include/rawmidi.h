@@ -1,3 +1,5 @@
+#ifndef TINYMIDI_RAWMIDI_H
+#define TINYMIDI_RAWMIDI_H
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -149,3 +151,4 @@ ssize_t rawmidi_hw_read(snd_rawmidi_t *rmidi, void *buffer, size_t size);
 int rawmidi_hw_close(snd_rawmidi_t *rmidi);
 int rawmidi_hw_nonblock(snd_rawmidi_t *rmidi, int nonblock);
 int rawmidi_hw_info(snd_rawmidi_t *rmidi, snd_rawmidi_info_t * info);
+#endif
